@@ -1,4 +1,3 @@
-
 numbers = list(map(int, input().split()))
 sum = 0
 for i in range(len(numbers)):
@@ -7,11 +6,11 @@ average = sum/len(numbers)
 dist = []
 for x in range(len(numbers)):
     if average > numbers[x]:
-        dist.append() = average - numbers[x]
+        dist.append(int(average - numbers[x]))
     else:
-        dist.append = numbers[x] - average
-
-print(f'{dist;.2f}', end=" ")
+        dist.append(int(numbers[x] - average))
+for j in range(len(numbers)):
+    print(f'{dist[j]:.2f}', end=" ")
 # ******************************
 # Make your Code
 # ******************************
